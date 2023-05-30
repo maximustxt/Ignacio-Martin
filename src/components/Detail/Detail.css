@@ -82,6 +82,6 @@ p {
 
   .divDelVideo {
     width: 330px;
-    height: 200px;
+    height: fit-content;
   }
 }
