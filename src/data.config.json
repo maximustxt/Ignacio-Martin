@@ -1,0 +1,64 @@
+{
+  "Proyectos": [
+    {
+      "id": 1,
+      "name": "Proyecto Rick And Morty",
+      "image": "https://th.bing.com/th/id/OIP.XuQTivtgH1n8kpLYiOxVOQHaK5?pid=ImgDet&rs=1",
+      "description": "Este es un proyecto basico , que tiene la finalidad de buscar a un determinado personaje , por su id o de forma aleatoria y poder guardarlo como favorito o eliminarlo directamente... Cuenta con un landing Page , para poder registrar a cada usuario que ingrese y poder mostrar dependiendo de cada uno sus favoritos.",
+      "Herramientas": [
+        "Node.js",
+        "React",
+        "Redux",
+        "Javascript",
+        "Css",
+        "Sequalize",
+        "PosgresSQL",
+        "Express",
+        "Insomnia",
+        "Sweet Alert 2"
+      ],
+      "video": "https://youtu.be/tyCg0nOG1xs"
+    },
+    {
+      "id": 2,
+      "name": "Proyecto De Dogs",
+      "image": "https://criaderocanino.es/wp-content/uploads/2020/05/dogo-aleman-gran-danes-1.jpg",
+      "description": "Es una aplicacion en la cual podes buscar una raza de perro que mas te guste , filtrar por peso , edad , etc y pasar un buen rato biendo todo tipo de razas... cuanta con un formulario para crear un perro a tu gusto y publicarlo en la app , tambien cuenta con paginado y otros tipos de funcionalidades.",
+      "Herramientas": [
+        "Node.js",
+        "React",
+        "Redux",
+        "Javascript",
+        "React Module Css",
+        "Sequalize",
+        "PosgresSQL",
+        "Express",
+        "Insomnia",
+        "Sweet Alert 2"
+      ],
+      "video": "https://youtu.be/sgrsjLGIWfc"
+    },
+    {
+      "id": 3,
+      "name": "Proyecto Casitas Del Hornero",
+      "image": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/utbvsuv2bhb7gbubbaqk",
+      "description": "Es un proyecto grupal , el cual consta de poder reservar cualquier tipo de habitacion , de cualquier hotel dentro de la Argentina , se podra logear , reservar hoteles , publicar en caso de querer ser proveedor , tambien hay favoritos , y muchas otras funcionalidades...",
+      "Herramientas": [
+        "Node.js",
+        "React",
+        "Vite",
+        "Bootstrap",
+        "React-Bootstrap",
+        "Redux",
+        "Javascript",
+        "React Module Css",
+        "Sequalize",
+        "PosgresSQL",
+        "Express",
+        "Insomnia",
+        "Sweet Alert 2"
+      ],
+      "video": "tytyrtytyr"
+    }
+  ]
+}

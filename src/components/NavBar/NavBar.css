@@ -1,0 +1,187 @@
+.Container {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 40px 40px;
+  margin-bottom: 160px;
+  background-color: rgb(12, 14, 46);
+  /* transform: scaleX(1.5) scaleY(2); */
+  /*backdrop-filter: blur(20px); /* Ajusta el valor para aumentar o disminuir el desenfoque */
+  /* background-color: transparent; */
+  overflow: hidden;
+  z-index: 999;
+}
+
+.Icono {
+  font-size: 45px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
+
+.Icono span {
+  color: aqua;
+}
+
+.menu {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 5%;
+  font-family: Prociono;
+  font-size: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.menu:hover {
+  background-color: aqua;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.menuHome {
+  color: aqua;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: Prociono;
+  font-size: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.menuHome:hover {
+  background-color: aqua;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.containerContact a {
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+}
+
+.containerContact img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.containerContact img:hover {
+  transform: scale(1.2); /*Es la escala o el tamaño del contenido*/
+  transition: transform 0.3s ease-in-out; /*Se crece gradualmente la imagen o el contenido con un determinado tiempo*/
+  filter: invert(50%); /*invierte o reduce el color en un porcentaje*/
+}
+
+@media (max-width: 700px) {
+  .Container {
+    position: fixed;
+    top: 40px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 29, 30);
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .menuHome {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 100px;
+    font-family: Prociono;
+    font-size: 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px 20px;
+  }
+
+  .menuHome:hover {
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    color: #fff;
+  }
+
+  .menu {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 100px;
+    font-family: Prociono;
+    font-size: 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px 20px;
+  }
+
+  .menu:hover {
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    color: #fff;
+  }
+
+  .Container.open {
+    transform: translateX(0);
+  }
+
+  .nav_toggle {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(29, 29, 30);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_toggle span {
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .nav_toggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px); /*Siempre poner  comas "," sino no va a funcionar*/
+  }
+
+  .nav_toggle.open > span:nth-child(2) {
+    display: none;
+  }
+
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px); /*Siempre poner  comas "," sino no va a funcionar*/
+  }
+
+  .Icono span {
+    color: aqua;
+    background-color: transparent;
+  }
+}
