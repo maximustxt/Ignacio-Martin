@@ -36,8 +36,10 @@ const Detail = () => {
             <div>
               <h1 className="title2">{name}</h1>
             </div>
-            <div className="divDelVideo">
-              <ReactPlayer url={video} controls />
+            <div className="ContenerdorDelDivDelVideo">
+              <div className="divDelVideo">
+                <ReactPlayer url={video} controls />
+              </div>
             </div>
             <p>{description}</p>
           </div>

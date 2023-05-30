@@ -74,6 +74,21 @@ p {
   margin-top: 50px;
 }
 
+@media (max-width: 400px) {
+  .ContainerVideo {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .divDelVideo {
+    width: 330px;
+    height: fit-content;
+  }
+  .SectionHerramientas {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+}
+
 @media (max-width: 700px) {
   .ContainerVideo {
     text-align: center;
@@ -81,7 +96,13 @@ p {
   }
 
   .divDelVideo {
-    width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
     height: fit-content;
+  }
+  .SectionHerramientas {
+    height: 100%;
+    margin-bottom: 100px;
   }
 }
