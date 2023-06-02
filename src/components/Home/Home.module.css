@@ -223,7 +223,7 @@
   margin-left: 30px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1030px) {
   .about {
     display: flex;
     flex-direction: column;

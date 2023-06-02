@@ -98,7 +98,7 @@
   filter: invert(50%); /*invierte o reduce el color en un porcentaje*/
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1030px) {
   .Container {
     position: fixed;
     top: 40px;
