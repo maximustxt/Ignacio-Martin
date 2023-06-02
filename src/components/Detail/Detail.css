@@ -2,6 +2,30 @@
   display: flex;
 }
 
+.BotonVolverHome {
+  border: none;
+  background-color: #00dfd8;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.BotonVolverHome:hover {
+  border: none;
+  background-color: #fff;
+  color: #000000;
+  padding: 20px 20px;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 .cardDetail h1 {
   font-size: 45px;
 }

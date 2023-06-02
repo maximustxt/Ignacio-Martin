@@ -9,6 +9,7 @@ import CardProyect from "../CardProyect/CardProyect";
 import data from "../../data.config.json";
 import emailjs from "emailjs-com";
 import { ChangeEvent, FormEvent, useState } from "react"; // debo importar esate to
+import { useTranslation } from "react-i18next";
 import swal from "sweetalert";
 
 import {
@@ -23,6 +24,10 @@ import {
 } from "../index";
 
 const Home = () => {
+  //*-------------------------Idiomas:
+  const [t, i18n] = useTranslation("global");
+  //*--------------------------------*//
+
   const [stateForm, setStateForm] = useState({
     name: "",
     email: "",
@@ -52,13 +57,12 @@ const Home = () => {
     ) {
       event.preventDefault();
       swal({
-        title: "Alert",
-        text: "Debes completar todos los campos",
+        title: t("texto.Alerta").toString(),
+        text: t("texto.Error").toString(),
         icon: "warning",
       });
     } else {
       const form = event.target as HTMLFormElement; // de alguna manera se pregunta si es de tipo element de HTML.
-      console.log(event);
       event.preventDefault();
       emailjs
         .sendForm(
@@ -70,25 +74,17 @@ const Home = () => {
         .then(
           (response) => {
             swal({
-              text: "Mensaje enviado con exito",
+              text: t("texto.success").toString(),
               icon: "success",
             });
             setStateForm({ name: "", email: "", message: "" });
-            console.log(
-              "¡El correo electrónico se envió correctamente!",
-              response.status,
-              response.text
-            );
           },
-          (error) => {
-            console.error(
-              "Hubo un error al enviar el correo electrónico:",
-              error
-            );
-          }
+          (error) => {}
         );
     }
   };
+
+  const nombre = "Ignacio";
 
   return (
     <>
@@ -99,18 +95,11 @@ const Home = () => {
             <section className={styles.Container} id="Perfil">
               <div className={styles.main}>
                 <h1>
-                  Soy <span className={styles.spanName}> Ignacio </span>
-                  Martin
+                  {t("texto.Titulo")}
+                  {"   "}
+                  <span className={styles.spanName}>{nombre}</span> Martin
                 </h1>
-                <p className={styles.p}>
-                  Soy Desarrollador Full Stack Develop , me apasiona el
-                  desarrollo web y la tecnologia , recien empiezo en este mundo
-                  del desarrollo, hace mas 6 meses estoy codeando y
-                  aprendiendo... Tengo muchas ganas y energia de seguir
-                  aprendiendo y ganar mas experiencia , tengo mucho por lo que
-                  aportar y aprender.. Estoy dispuesto a cualquier desafio y
-                  objetivo a cumplicar en cualquier momento.
-                </p>
+                <p className={styles.p}>{t("texto.soyDesarrollador")}</p>
                 <div className={styles.containerContact}>
                   <a
                     href="https://www.linkedin.com/in/ignacio-martin-339542263/"
@@ -128,7 +117,7 @@ const Home = () => {
                   </a>
                 </div>
                 <a href="/ruta-al-cv" download className={styles.botonCv}>
-                  Descargar CV
+                  {t("texto.Boton")}
                 </a>
               </div>
               <div>
@@ -142,13 +131,10 @@ const Home = () => {
           <div className={styles.about}>
             <img className={styles.img} src={imagenHome2} />
             <div className={styles.Info}>
-              <h2>Habilidades</h2>
+              <h2>{t("texto.TituloHabilidad")}</h2>
               <div className={styles.Divider}></div>
               <div className={styles.ContainerDeHabilidad}>
-                <p className={styles.pHabilidades}>
-                  Tengo habilidades en JavaScript , TypeScript(basico) React ,
-                  Redux , Css , Html , express , PosgresSQL , Sequalize...
-                </p>
+                <p className={styles.pHabilidades}> {t("texto.Habilidades")}</p>
                 <div className={styles.DivimagenHabilidad}>
                   <img className={styles.imagenHabilidad} src={React} />
                   <img className={styles.imagenHabilidad} src={Redux} />
@@ -160,12 +146,7 @@ const Home = () => {
                   <img className={styles.imagenHabilidad} src={Html} />
                 </div>
                 <p className={styles.pHabilidades}>
-                  Me gusta trabajar en equipo , compartir y ayudar a mis
-                  compañeros. Tengo mucha voluntad , energia y ganas de seguir
-                  creciendo y aprendiendo, soy dedicado y diciplinado , me gusta
-                  dar mas de lo que espero de mi mismo. Estoy dispuesto a
-                  enfrentar cualquier desafio.. y sobre todo me encanta
-                  trabajar.
+                  {t("texto.HabilidadesBlandas")}
                 </p>
               </div>
               <br />
@@ -175,7 +156,7 @@ const Home = () => {
         {/* Section De Proyectos*/}
         <section className={styles.sectionPorfolio} id="Proyectos">
           <div className={styles.containerPorfolio}>
-            <h2>Mis Proyectos</h2>
+            <h2>{t("texto.Proyectos")}</h2>
             <div className={styles.Divider}></div>
             <div className={styles.divCards}>
               {data.Proyectos.map((data: Proyecto) => (
@@ -193,13 +174,13 @@ const Home = () => {
         {/* Section De Contacto*/}
         <section className={styles.sectionContact} id="Contacto">
           <div className={styles.containerContact}>
-            <h2>Contacto</h2>
+            <h2>{t("texto.Contacto")}</h2>
             <div className={styles.Divider}></div>
             <form onSubmit={funcionSubmitForm} className={styles.Form}>
               <input
                 className="inputForm"
                 type="text"
-                placeholder="NOMBRE"
+                placeholder={`${t("texto.NombreForm")}`}
                 onChange={onchange}
                 name="name"
                 value={stateForm.name}
@@ -207,19 +188,19 @@ const Home = () => {
               <input
                 className="inputForm"
                 type="email"
-                placeholder="EMAIL"
+                placeholder="Email"
                 onChange={onchange}
                 name="email"
                 value={stateForm.email}
               />
               <textarea
-                placeholder="TU MENSAJE AQUI"
+                placeholder={`${t("texto.MensajeForm")}`}
                 value={stateForm.message}
                 onChange={onchange}
                 name="message"
               ></textarea>
               <button type="submit" className={styles.submit}>
-                ENVIAR MENSAJE
+                {t("texto.BotonEnviarMensaje")}
               </button>
             </form>
           </div>

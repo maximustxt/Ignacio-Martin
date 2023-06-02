@@ -1,10 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./Detail.css";
 import ArrayHerramienta from "../Detail/Herramientas";
 import data from "../../data.config.json";
 import ReactPlayer from "react-player";
+import { useTranslation } from "react-i18next";
 
 const Detail = () => {
+  const navigate = useNavigate();
+
+  //*----------------------Idiomas:
+  const [t, i18n] = useTranslation("global");
+  //*------------------------------------*//
+
   interface Proyecto {
     id: number;
     name: string;
@@ -28,30 +35,39 @@ const Detail = () => {
   }
   const { name, description, Herramientas, video } = ObjetoDelProyecto;
 
+  const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    /// siempre poner react. ...y el resto del tipo de dato para los eventos.
+    const selectedLanguage = e.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
+
+  const FuncionVolverHome = () => {
+    navigate("/");
+  };
+
   return (
     <>
       <div className="cardDetail" key={id}>
         <div className="card-infoDetail">
           <div className="ContainerVideo">
             <div>
-              <h1 className="title2">{name}</h1>
+              <h1 className="title2">{t(name)}</h1>
             </div>
             <div className="ContenerdorDelDivDelVideo">
               <div className="divDelVideo">
                 <ReactPlayer url={video} controls />
               </div>
             </div>
-            <p>{description}</p>
+            <button onClick={FuncionVolverHome} className="BotonVolverHome">
+              {t("texto.Home")}
+            </button>
+            <p>{t(ObjetoDelProyecto.description)}</p>
           </div>
           <div className="containerDeHabilidades">
-            <h1>Herramientas utilizadas</h1>
+            <h1>{t("texto.HerramientasDetail")}</h1>
             <div className="Divider"></div>
             <section className="SectionHerramientas">
-              {/* <div className="DivHerramientasPadre">
-                <div className="DivHerramientas"> */}
               <ArrayHerramienta Herramientas={Herramientas} />
-              {/* </div>
-              </div> */}
             </section>
           </div>
         </div>

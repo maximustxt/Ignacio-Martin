@@ -1,0 +1,33 @@
+{
+  "Proyecto Rick And Morty": "Project Rick And Morty",
+  "Este es un proyecto basico , que tiene la finalidad de buscar a un determinado personaje , por su id o de forma aleatoria y poder guardarlo como favorito o eliminarlo directamente... Cuenta con un landing Page , para poder registrar a cada usuario que ingrese y poder mostrar dependiendo de cada uno sus favoritos.": "This is a basic project, which has the purpose of searching for a certain character, by its id or randomly and being able to save it as a favorite or delete it directly... It has a landing page, to be able to register each user who enters and Being able to show your favorites depending on each one.",
+  "Proyecto De Dogs": "Dog Project",
+  "Es una aplicacion en la cual podes buscar una raza de perro que mas te guste , filtrar por peso , edad , etc y pasar un buen rato biendo todo tipo de razas... cuanta con un formulario para crear un perro a tu gusto y publicarlo en la app , tambien cuenta con paginado y otros tipos de funcionalidades.": "It is an application in which you can search for a breed of dog that you like the most, filter by weight, age, etc. and have a good time with all kinds of breeds... it has a form to create a dog to your liking and publish it In the app, it also has pagination and other types of functionalities.",
+  "Proyecto Casitas Del Hornero": "Project Casitas Del Hornero",
+  "Es un proyecto grupal , el cual consta de poder reservar cualquier tipo de habitacion , de cualquier hotel dentro de la Argentina , se podra logear , reservar hoteles , publicar en caso de querer ser proveedor , tambien hay favoritos , y muchas otras funcionalidades...": "It is a group project, which consists of being able to reserve any type of room, of any hotel within Argentina, you can log in, book hotels, publish if you want to be a provider, there are also favorites, and many other features...",
+
+  "texto": {
+    "Home": "← Home",
+    "soyDesarrollador": "I am a Full Stack Developer, passionate about web development and technology. I am new to this world of development, have been coding and learning for over 6 months... I am eager and energetic to continue learning and gaining more experience. I have a lot to contribute and learn. I am ready for any challenge and goal to accomplish at any time.",
+    "Titulo": "I am ",
+    "Boton": "Download CV",
+    "TituloHabilidad": "Skills",
+    "Habilidades": "I have skills in JavaScript, TypeScript (basic) React, Redux, Css, Html, express, PosgresSQL, Sequalize...",
+    "HabilidadesBlandas": "I like to work as a team, share and help my colleagues. I have a lot of will, energy and desire to continue growing and learning, I am dedicated and disciplined, I like to give more than I expect from myself. I am willing to face any challenge. and above all I love working.",
+    "BotonEnviarMensaje": "Send Message",
+    "Contacto": "Contact",
+    "Proyectos": "My Projects",
+    "Description": "{{description}}",
+    "PerfilNav": "Profile",
+    "HabilidadesNav": "Skills",
+    "ProyectosNav": "Projects",
+    "ContactoNav": "Contact",
+    "HerramientasDetail": "Used tools",
+    "BotonVerMas": "See More",
+    "Error": "You must complete all fields",
+    "success": "Message sent succesfully",
+    "Alerta": "Alert",
+    "NombreForm": "Name",
+    "MensajeForm": "Your message here"
+  }
+}
