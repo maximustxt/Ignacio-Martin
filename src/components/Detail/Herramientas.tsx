@@ -8,6 +8,7 @@ import Node from "../../image/nodejs_original_wordmark_logo_icon_146412.png";
 import PosgresSQL from "../../image/postgresql_original_wordmark_logo_icon_146392.png";
 import Alert from "../../image/rosquilla.png";
 import express from "../../image/icons8-express-js-48.png";
+import GitFlow from "../../image/git.png";
 
 interface Props {
   Herramientas: string[];
@@ -17,6 +18,7 @@ const ArrayHerramienta = ({ Herramientas }: Props) => {
   console.log(Herramientas);
 
   const image: any = {
+    "Git Flow": GitFlow,
     "Node.js": Node,
     React: React,
     Vite: "https://vitejs.dev/logo.svg",
