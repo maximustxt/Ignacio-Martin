@@ -57,7 +57,13 @@
         "Express",
         "Insomnia",
         "Sweet Alert 2",
-        "Git Flow"
+        "Git Flow",
+        "i18next",
+        "NodeMailer",
+        "Chart.js",
+        "Mui-Datatables",
+        "React-Leaflet",
+        "React-Datepicker"
       ],
       "video": "https://youtu.be/_MEXBh6rWf0"
     }
