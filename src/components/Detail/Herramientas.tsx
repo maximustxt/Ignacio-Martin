@@ -40,6 +40,8 @@ const ArrayHerramienta = ({ Herramientas }: Props) => {
     Express: express,
     Insomnia: "https://insomnia.rest/images/insomnia-logo.svg",
     "Sweet Alert 2": Alert,
+    Firebase:
+      "https://www.gstatic.com/devrel-devsite/prod/v8384ce39f720e001fb8bd2a6f94b1084300273daaf700bffd864da68ae2d9c21/firebase/images/lockup.svg",
   };
 
   return (

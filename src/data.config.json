@@ -63,7 +63,8 @@
         "Chart.js",
         "Mui-Datatables",
         "React-Leaflet",
-        "React-Datepicker"
+        "React-Datepicker",
+        "Firebase"
       ],
       "video": "https://youtu.be/JZQ49rB5-Oc"
     }
