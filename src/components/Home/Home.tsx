@@ -3,6 +3,7 @@ import imagenHome from "../../image/d459d6c5-99bb-4538-8916-0c7bd81aea93.jpeg";
 //-------------------icono Linkedin:
 import imagenLinkedin from "../../image/vinculado-en-logo-de-dos-letras (2).png";
 import imagenGitHub from "../../image/github (2).png";
+import imagenGitHubBlack from "../../image/github (3).png";
 import imagenHome2 from "../../image/Perfil.jpg";
 import styles from "./Home.module.css";
 import CardProyect from "../CardProyect/CardProyect";
@@ -145,6 +146,14 @@ const Home = () => {
                   <img className={styles.imagenHabilidad} src={Css} />
                   <img className={styles.imagenHabilidad} src={Typescript} />
                   <img className={styles.imagenHabilidad} src={Html} />
+                  <img
+                    className={styles.imagenHabilidad}
+                    src={imagenGitHubBlack}
+                  />
+                  <img
+                    className={styles.imagenHabilidad}
+                    src="https://huaripaz.github.io/assets/img/skills/git.png"
+                  />
                 </div>
                 <p className={styles.pHabilidades}>
                   {t("texto.HabilidadesBlandas")}

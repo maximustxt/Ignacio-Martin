@@ -47,7 +47,8 @@ const ArrayHerramienta = ({ Herramientas }: Props) => {
       {Herramientas.map((Her: string) => (
         <div className="Herramienta">
           <img style={{ width: "50px", height: "50px" }} src={image[Her]} />
-          <h3>{Her}</h3>
+
+          <h4>{Her}</h4>
         </div>
       ))}
     </>
