@@ -78,11 +78,11 @@
 }
 
 .SectionHerramientas {
-  width: 80%;
+  width: fit-content;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .title2 {
