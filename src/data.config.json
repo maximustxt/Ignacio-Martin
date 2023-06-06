@@ -64,7 +64,8 @@
         "Mui-Datatables",
         "React-Leaflet",
         "React-Datepicker",
-        "Firebase"
+        "Firebase",
+        "Cloudinary"
       ],
       "video": "https://youtu.be/JZQ49rB5-Oc"
     }

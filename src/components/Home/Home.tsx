@@ -9,9 +9,10 @@ import styles from "./Home.module.css";
 import CardProyect from "../CardProyect/CardProyect";
 import data from "../../data.config.json";
 import emailjs from "emailjs-com";
-import { ChangeEvent, FormEvent, useState } from "react"; // debo importar esate to
+import { ChangeEvent, FormEvent, useState, useEffect } from "react"; // debo importar esate to
 import { useTranslation } from "react-i18next";
 import swal from "sweetalert";
+import Cv from "../docs/MiCv.pdf";
 
 import {
   React,
@@ -85,6 +86,11 @@ const Home = () => {
     }
   };
 
+  useEffect(() => {
+    const pdfPath = "../docs/MiCv.pdf";
+    window.open(pdfPath, "_blank");
+  }, []);
+
   const nombre = "Ignacio";
 
   return (
@@ -118,7 +124,7 @@ const Home = () => {
                     <img className="imagenLink" src={imagenGitHub} />
                   </a>
                 </div>
-                <a href="/ruta-al-cv" download className={styles.botonCv}>
+                <a href={Cv} download className={styles.botonCv}>
                   {t("texto.Boton")}
                 </a>
               </div>
