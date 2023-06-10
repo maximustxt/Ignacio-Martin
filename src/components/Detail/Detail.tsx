@@ -4,6 +4,7 @@ import ArrayHerramienta from "../Detail/Herramientas";
 import data from "../../data.config.json";
 import ReactPlayer from "react-player";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Detail = () => {
   const navigate = useNavigate();
@@ -41,10 +42,6 @@ const Detail = () => {
     i18n.changeLanguage(selectedLanguage);
   };
 
-  const FuncionVolverHome = () => {
-    navigate("/");
-  };
-
   return (
     <>
       <div className="cardDetail" key={id}>
@@ -58,9 +55,9 @@ const Detail = () => {
                 <ReactPlayer url={video} controls />
               </div>
             </div>
-            <button onClick={FuncionVolverHome} className="BotonVolverHome">
-              {t("texto.Home")}
-            </button>
+            <Link to="/">
+              <button className="BotonVolverHome">{t("texto.Home")}</button>
+            </Link>
             <p>{t(ObjetoDelProyecto.description)}</p>
           </div>
           <div className="containerDeHabilidades">

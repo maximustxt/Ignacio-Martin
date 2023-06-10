@@ -86,11 +86,6 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    const pdfPath = "../docs/MiCv.pdf";
-    window.open(pdfPath, "_blank");
-  }, []);
-
   const nombre = "Ignacio";
 
   return (
@@ -124,9 +119,6 @@ const Home = () => {
                     <img className="imagenLink" src={imagenGitHub} />
                   </a>
                 </div>
-                {/* <a href={Cv} download className={styles.botonCv}>
-                  {t("texto.Boton")}
-                </a> */}
               </div>
               <div>
                 <img className={styles.imagen} src={imagenHome} />
