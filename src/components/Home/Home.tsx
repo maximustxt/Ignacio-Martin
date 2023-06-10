@@ -12,7 +12,7 @@ import emailjs from "emailjs-com";
 import { ChangeEvent, FormEvent, useState, useEffect } from "react"; // debo importar esate to
 import { useTranslation } from "react-i18next";
 import swal from "sweetalert";
-import Cv from "../docs/MiCv.pdf";
+// import Cv from "../docs/MiCv.pdf";
 
 import {
   React,
@@ -124,9 +124,9 @@ const Home = () => {
                     <img className="imagenLink" src={imagenGitHub} />
                   </a>
                 </div>
-                <a href={Cv} download className={styles.botonCv}>
+                {/* <a href={Cv} download className={styles.botonCv}>
                   {t("texto.Boton")}
-                </a>
+                </a> */}
               </div>
               <div>
                 <img className={styles.imagen} src={imagenHome} />
