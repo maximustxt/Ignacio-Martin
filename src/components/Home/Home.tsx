@@ -104,6 +104,8 @@ const Home = () => {
                   {t("texto.Titulo")}
                   {"   "}
                   {"   "}
+                  {"   "}
+                  {"   "}
                   <span className={styles.spanName}>{nombre}</span> Martin
                 </h1>
                 <p className={styles.p}>{t("texto.soyDesarrollador")}</p>
