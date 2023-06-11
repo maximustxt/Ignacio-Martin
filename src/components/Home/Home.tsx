@@ -12,7 +12,11 @@ import emailjs from "emailjs-com";
 import { ChangeEvent, FormEvent, useState, useEffect } from "react"; // debo importar esate to
 import { useTranslation } from "react-i18next";
 import swal from "sweetalert";
-// import Cv from "../docs/MiCv.pdf";
+
+// @ts-ignore
+import Cv from "../Home/MiCv.pdf";
+
+//@ts-ignore : esto lo que hace es ignorar el error que se encuentra debajo de el , hay que usarlo con mucha precaucion... ya que solo se usa para errorer peqeños y de mala copilacion. Esto va siempre comentado.
 
 import {
   React,
@@ -118,6 +122,11 @@ const Home = () => {
                   >
                     <img className="imagenLink" src={imagenGitHub} />
                   </a>
+                  <div>
+                    <a href={Cv} download="Mi-Cv">
+                      <button>{t("texto.Boton")}</button>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div>
