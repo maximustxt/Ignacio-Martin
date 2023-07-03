@@ -5,6 +5,8 @@
   "Es una aplicacion en la cual podes buscar una raza de perro que mas te guste , filtrar por peso , edad , etc y pasar un buen rato biendo todo tipo de razas... cuanta con un formulario para crear un perro a tu gusto y publicarlo en la app , tambien cuenta con paginado y otros tipos de funcionalidades.": "It is an application in which you can search for the breed of dog that you like the most, filter by weight, age, etc... it has a form to create a dog to your liking and publish it in the app, it also has pagination and other types of functionalities.",
   "Proyecto Casitas Del Hornero": "Project Casitas Del Hornero",
   "Es un proyecto grupal , el cual consta de poder reservar cualquier tipo de habitacion , de cualquier hotel dentro de la Argentina , se podra logear , reservar hoteles , publicar en caso de querer ser proveedor , tambien hay favoritos , y muchas otras funcionalidades...": "It is a group project of 8 Members (we use the SCRUM Methodology), which consists of being able to reserve any type of room, from any hotel within Argentina, you can log in, book hotels, publish if you want to be a provider, there are also favorites, and many others functionalities...",
+  "Proyecto De Pokemons": "Pokemon Project",
+  "Es una página que cuenta con landing page , Favoritos , Creación De Pokemons , Detail , Filtrados combinados , Responsive , etc...": "It is a page that has a landing page, Favorites, Pokemon Creation, Detail, Combined Filters, Responsive etc...",
 
   "texto": {
     "Home": "← Home",
@@ -12,7 +14,7 @@
     "Titulo": "I am ",
     "Boton": "Download CV",
     "TituloHabilidad": "Skills",
-    "Habilidades": "I have skills in JavaScript, TypeScript (basic) React, Redux, Css, Html, express, PosgresSQL, Sequalize...",
+    "Habilidades": "I have skills in JavaScript, TypeScript , Angular React, Redux, Css, Html, express, PosgresSQL, Sequalize...",
     "HabilidadesBlandas": "I like to work as a team, share and help my colleagues. I have a lot of will, energy and desire to continue growing and learning, I am dedicated and disciplined, I like to give more than I expect from myself. I am willing to face any challenge. and above all I love working.",
     "BotonEnviarMensaje": "Send Message",
     "Contacto": "Contact",

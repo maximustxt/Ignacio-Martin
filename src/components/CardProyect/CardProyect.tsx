@@ -1,22 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import imagenGitHubBlack from "../../image/github (3).png";
 import "./CardProyect.css";
 
 interface Proyecto {
   id: number;
   name: string;
   image: string;
-  description: string;
-  Herramientas: string[];
+  GitHub: string;
 }
 
-const CardProyect = ({
-  id,
-  name,
-  image,
-  description,
-  Herramientas,
-}: Proyecto) => {
+const CardProyect = ({ id, name, image, GitHub }: Proyecto) => {
   const navigate = useNavigate();
 
   const FuncionDetailBoton = (id: number) => {
@@ -26,14 +20,16 @@ const CardProyect = ({
   const [t, i18n] = useTranslation("global");
 
   return (
-    <div className="card">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="card"
+    >
       <div className="card-info">
         <img className="img" src={image} />
+        <a href={GitHub}>GitHub</a>
         <p className="title">{t(name)}</p>
-
-        {/* <button onClick={() => FuncionDetailBoton(id)} className="btn">
-          Ver Mas
-        </button> */}
         <button onClick={() => FuncionDetailBoton(id)} className="cta">
           <span>{t("texto.BotonVerMas")}</span>
           <svg viewBox="0 0 13 10" height="10px" width="15px">

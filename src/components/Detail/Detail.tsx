@@ -36,12 +36,6 @@ const Detail = () => {
   }
   const { name, description, Herramientas, video } = ObjetoDelProyecto;
 
-  const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    /// siempre poner react. ...y el resto del tipo de dato para los eventos.
-    const selectedLanguage = e.target.value;
-    i18n.changeLanguage(selectedLanguage);
-  };
-
   return (
     <>
       <div className="cardDetail" key={id}>

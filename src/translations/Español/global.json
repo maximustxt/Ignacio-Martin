@@ -5,13 +5,16 @@
   "Es una aplicacion en la cual podes buscar una raza de perro que mas te guste , filtrar por peso , edad , etc y pasar un buen rato biendo todo tipo de razas... cuanta con un formulario para crear un perro a tu gusto y publicarlo en la app , tambien cuenta con paginado y otros tipos de funcionalidades.": "Es una aplicación en la cual podes buscar la raza de perro que más te guste , filtrar por peso , edad , etc…cuanta con un formulario para crear un perro a tu gusto y publicarlo en la app , también cuenta con paginado y otros tipos de funcionalidades.",
   "Proyecto Casitas Del Hornero": "Proyecto Casitas Del Hornero",
   "Es un proyecto grupal , el cual consta de poder reservar cualquier tipo de habitacion , de cualquier hotel dentro de la Argentina , se podra logear , reservar hoteles , publicar en caso de querer ser proveedor , tambien hay favoritos , y muchas otras funcionalidades...": "Es un proyecto grupal  de 8 Integrantes (usamos la Metodologia SCRUM),  el cual consta de poder reservar cualquier tipo de habitación , de cualquier hotel dentro de la Argentina , se podrá logear , reservar hoteles , publicar en caso de querer ser proveedor , también hay favoritos , y muchas otras funcionalidades...",
+  "Proyecto De Pokemons": "Proyecto De Pokemons",
+  "Es una página que cuenta con landing page , Favoritos , Creación De Pokemons , Detail , Filtrados combinados , Responsive , etc...": "Es una página que cuenta con landing page , Favoritos , Creación De Pokemons , Detail , Filtrados combinados , Responsive , etc...",
+
   "texto": {
     "Home": "← Inicio",
     "soyDesarrollador": "Soy Ignacio Martin , soy desarrollador Fullstack , Me Fascina el desarrollo web y la tecnología , me considero una persona con mentalidad humilde , porque estoy dispuesto aprender de los que más saben y de los que mas avanzados están , estoy abierto a cualquier forma de crecimiento , me gusta ponerme a prueba y demostrarme que puedo hacer lo que sea necesario por cumplir los objetivos.",
     "Titulo": "Soy",
     "Boton": "Descargar CV",
     "TituloHabilidad": "Habilidades",
-    "Habilidades": "Tengo habilidades en JavaScript , TypeScript(basico) React , Redux , Css , Html , express , PosgresSQL , Sequalize...",
+    "Habilidades": "Tengo habilidades en JavaScript , TypeScript, Angular , React , Redux , Css , Html , express , PosgresSQL , Sequalize...",
     "HabilidadesBlandas": "Me gusta trabajar en equipo , compartir y ayudar a mis compañeros. Tengo mucha voluntad , energia y ganas de seguir creciendo y aprendiendo, soy dedicado y diciplinado , me gusta dar mas de lo que espero de mi mismo. Estoy dispuesto a enfrentar cualquier desafio.. y sobre todo me encanta trabajar.",
     "BotonEnviarMensaje": "ENVIAR MENSAJE",
     "Contacto": "Contacto",

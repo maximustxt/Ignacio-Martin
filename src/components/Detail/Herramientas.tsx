@@ -8,6 +8,7 @@ import PosgresSQL from "../../image/postgresql_original_wordmark_logo_icon_14639
 import Alert from "../../image/rosquilla.png";
 import express from "../../image/icons8-express-js-48.png";
 import GitFlow from "../../image/git.png";
+import Typescript from "../../image/icons8-typescript-48.png";
 
 interface Props {
   Herramientas: string[];
@@ -42,6 +43,10 @@ const ArrayHerramienta = ({ Herramientas }: Props) => {
     "Sweet Alert 2": Alert,
     Cloudinary: "https://github.com/cloudinary.png?size=40",
     Firebase: "https://github.com/firebase.png?size=40",
+    Angular:
+      "https://github.com/angular/angular/raw/main/aio/src/assets/images/logos/angular/angular.png",
+    Typescript: Typescript,
+    Sass: "https://camo.githubusercontent.com/587d0f411b348ee05a53c7685b59142e0705ff8d06181d09008438c1a92f1a96/68747470733a2f2f7261776769742e636f6d2f736173732f736173732d736974652f6d61696e2f736f757263652f6173736574732f696d672f6c6f676f732f6c6f676f2e737667",
   };
 
   return (
@@ -49,7 +54,6 @@ const ArrayHerramienta = ({ Herramientas }: Props) => {
       {Herramientas.map((Her: string) => (
         <div className="Herramienta">
           <img style={{ width: "50px", height: "50px" }} src={image[Her]} />
-
           <h4>{Her}</h4>
         </div>
       ))}

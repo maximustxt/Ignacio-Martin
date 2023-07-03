@@ -1,3 +1,6 @@
+// @ts-ignore
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos CSS de AOS
 import NavBar from "../NavBar/NavBar";
 import imagenHome from "../../image/d459d6c5-99bb-4538-8916-0c7bd81aea93.jpeg";
 //-------------------icono Linkedin:
@@ -43,8 +46,7 @@ const Home = () => {
     id: number;
     name: string;
     image: string;
-    description: string;
-    Herramientas: string[];
+    GitHub: string;
   }
   const onchange = (
     event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
@@ -92,6 +94,10 @@ const Home = () => {
 
   const nombre = "Ignacio";
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -100,7 +106,7 @@ const Home = () => {
           <div className={styles.ContainerPresentacion}>
             <section className={styles.Container} id="Perfil">
               <div className={styles.main}>
-                <h1>
+                <h1 data-aos="fade-right">
                   {t("texto.Titulo")}
                   {"   "}
                   {"   "}
@@ -108,8 +114,10 @@ const Home = () => {
                   {"   "}
                   <span className={styles.spanName}>{nombre}</span> Martin
                 </h1>
-                <p className={styles.p}>{t("texto.soyDesarrollador")}</p>
-                <div className={styles.containerContact}>
+                <p data-aos="fade-right" className={styles.p}>
+                  {t("texto.soyDesarrollador")}
+                </p>
+                <div data-aos="fade-right" className={styles.containerContact}>
                   <a
                     href="https://www.linkedin.com/in/ignacio-martin-339542263/"
                     target="_blank"
@@ -124,14 +132,14 @@ const Home = () => {
                   >
                     <img className="imagenLink" src={imagenGitHub} />
                   </a>
-                  <div>
+                  <div data-aos="fade-up" data-aos-duration="3000">
                     <a href={Cv} download="Mi-Cv">
                       <button>{t("texto.Boton")}</button>
                     </a>
                   </div>
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <img className={styles.imagen} src={imagenHome} />
               </div>
             </section>
@@ -142,11 +150,19 @@ const Home = () => {
           <div className={styles.about}>
             <img className={styles.img} src={imagenHome2} />
             <div className={styles.Info}>
-              <h2>{t("texto.TituloHabilidad")}</h2>
+              <h2 data-aos="fade-down"> {t("texto.TituloHabilidad")}</h2>
               <div className={styles.Divider}></div>
               <div className={styles.ContainerDeHabilidad}>
-                <p className={styles.pHabilidades}> {t("texto.Habilidades")}</p>
-                <div className={styles.DivimagenHabilidad}>
+                <p data-aos="fade-left" className={styles.pHabilidades}>
+                  {" "}
+                  {t("texto.Habilidades")}
+                </p>
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  className={styles.DivimagenHabilidad}
+                >
                   <img className={styles.imagenHabilidad} src={React} />
                   <img className={styles.imagenHabilidad} src={Redux} />
                   <img className={styles.imagenHabilidad} src={Sequelize} />
@@ -163,8 +179,16 @@ const Home = () => {
                     className={styles.imagenHabilidad}
                     src="https://huaripaz.github.io/assets/img/skills/git.png"
                   />
+                  <img
+                    className={styles.imagenHabilidad}
+                    src="https://github.com/angular/angular/raw/main/aio/src/assets/images/logos/angular/angular.png"
+                  />
                 </div>
-                <p className={styles.pHabilidades}>
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className={styles.pHabilidades}
+                >
                   {t("texto.HabilidadesBlandas")}
                 </p>
               </div>
@@ -175,16 +199,26 @@ const Home = () => {
         {/* Section De Proyectos*/}
         <section className={styles.sectionPorfolio} id="Proyectos">
           <div className={styles.containerPorfolio}>
-            <h2>{t("texto.Proyectos")}</h2>
-            <div className={styles.Divider}></div>
+            <h2
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              {t("texto.Proyectos")}
+            </h2>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className={styles.Divider}
+            ></div>
             <div className={styles.divCards}>
               {data.Proyectos.map((data: Proyecto) => (
                 <CardProyect
                   id={data.id}
                   name={data.name}
                   image={data.image}
-                  description={data.description}
-                  Herramientas={data.Herramientas}
+                  GitHub={data.GitHub}
                 />
               ))}
             </div>
@@ -193,8 +227,19 @@ const Home = () => {
         {/* Section De Contacto*/}
         <section className={styles.sectionContact} id="Contacto">
           <div className={styles.containerContact}>
-            <h2>{t("texto.Contacto")}</h2>
-            <div className={styles.Divider}></div>
+            <h2
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              {t("texto.Contacto")}
+            </h2>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className={styles.Divider}
+            ></div>
             <form onSubmit={funcionSubmitForm} className={styles.Form}>
               <input
                 className="inputForm"
@@ -218,7 +263,12 @@ const Home = () => {
                 onChange={onchange}
                 name="message"
               ></textarea>
-              <button type="submit" className={styles.submit}>
+              <button
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                type="submit"
+                className={styles.submit}
+              >
                 {t("texto.BotonEnviarMensaje")}
               </button>
             </form>

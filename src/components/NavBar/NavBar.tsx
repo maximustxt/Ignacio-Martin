@@ -15,6 +15,10 @@ const NavBar = () => {
     i18n.changeLanguage(selectedLanguage);
   };
 
+  const FuncionOnClick = () => {
+    setStateMenu(!stateMenu);
+  };
+
   return (
     <nav className="nav">
       <div className="contenedorNav">
@@ -22,17 +26,17 @@ const NavBar = () => {
           <a className="Icono" href="#">
             I<span>M</span>
           </a>
-          <a className="menuHome" href="#Perfil">
+          <a onClick={FuncionOnClick} className="menuHome" href="#Perfil">
             {t("texto.PerfilNav")}
           </a>
-          <a className="menu" href="#Habilidades">
+          <a onClick={FuncionOnClick} className="menu" href="#Habilidades">
             {t("texto.HabilidadesNav")}
           </a>
-          <a className="menu " href="#Proyectos">
+          <a onClick={FuncionOnClick} className="menu " href="#Proyectos">
             {t("texto.ProyectosNav")}
           </a>
 
-          <a className="menu" href="#Contacto">
+          <a onClick={FuncionOnClick} className="menu" href="#Contacto">
             {t("texto.ContactoNav")}
           </a>
           <div className="ContainerTraduccion">
