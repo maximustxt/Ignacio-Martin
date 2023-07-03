@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 import swal from "sweetalert";
 
 // @ts-ignore
-import Cv from "../Home/MiCv.pdf";
+import Cv from "../Home/Cv.docx.pdf";
 
 //@ts-ignore : esto lo que hace es ignorar el error que se encuentra debajo de el , hay que usarlo con mucha precaucion... ya que solo se usa para errorer peqeños y de mala copilacion. Esto va siempre comentado.
 
@@ -133,7 +133,7 @@ const Home = () => {
                     <img className="imagenLink" src={imagenGitHub} />
                   </a>
                   <div data-aos="fade-up" data-aos-duration="3000">
-                    <a href={Cv} download="Mi-Cv">
+                    <a href={Cv} download="Cv">
                       <button>{t("texto.Boton")}</button>
                     </a>
                   </div>
