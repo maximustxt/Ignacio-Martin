@@ -15,8 +15,6 @@ interface Props {
 }
 
 const ArrayHerramienta = ({ Herramientas }: Props) => {
-  console.log(Herramientas);
-
   const image: any = {
     i18next:
       "https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https%3A%2F%2F1143667985-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-L9iS6Wm2hynS5H9Gj7j%252Favatar.png%3Fgeneration%3D1523462254548780%26alt%3Dmedia",

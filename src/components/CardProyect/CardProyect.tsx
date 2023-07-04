@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import imagenGitHubBlack from "../../image/github (3).png";
 import "./CardProyect.css";
 
 interface Proyecto {
@@ -12,12 +11,13 @@ interface Proyecto {
 
 const CardProyect = ({ id, name, image, GitHub }: Proyecto) => {
   const navigate = useNavigate();
+  const [t, i18n] = useTranslation("global");
 
   const FuncionDetailBoton = (id: number) => {
     navigate(`/Detail/${id}`);
   };
 
-  const [t, i18n] = useTranslation("global");
+  //----------------Cuando el componente se monte :
 
   return (
     <div
@@ -28,7 +28,9 @@ const CardProyect = ({ id, name, image, GitHub }: Proyecto) => {
     >
       <div className="card-info">
         <img className="img" src={image} />
-        <a href={GitHub}>GitHub</a>
+        <a href={GitHub} target="_blank">
+          GitHub
+        </a>
         <p className="title">{t(name)}</p>
         <button onClick={() => FuncionDetailBoton(id)} className="cta">
           <span>{t("texto.BotonVerMas")}</span>
